@@ -55,34 +55,34 @@
   </div> -->
 
 
-  <div class="fixedicon fixed-bottom">
-    <ol class="row justify-content-center">
-      <a href="https://www.facebook.com" title="facebook">
+  <div class="fixedicon fixed-bottom" data-aos="slide-right" data-aos-offset="100" data-aos-delay="100">
+    <ol class="row justify-content-center sortable" id="">
+      <a href="https://www.facebook.com/groups/coding4beginners/?ref=share&mibextid=ycz2xE" title="facebook">
         <li><i class="fa-brands fa-facebook"></i></li>
       </a>
-      <a href="https://www.Instagram.com" title="Instagram">
+      <a href="https://instagram.com/maheshs8645?igshid=OGQ5ZDc2ODk2ZA==" title="Instagram">
         <li><i class="fa-brands fa-instagram"></i></li>
       </a>
       <a href="https://www.twitter.com" title="Twitter">
         <li><i class="fa-brands fa-twitter"></i></li>
       </a>
-      <a href="https://www.youtube.com" title="Youtube">
+      <a href="https://youtube.com/@moryafitness1396?si=VLzLkACDPJYYDnPt" title="Youtube">
         <li><i class="fa-brands fa-youtube"></i></li>
       </a>
     </ol>
   </div>
 
-  <div class="top1 fixed-bottom"><span><a href="index.html" title="Go To Top"><i
+  <div class="top1 fixed-bottom"><span data-aos="slide-left" data-aos-offset="100" data-aos-delay="100"><a href="#top" title="Go To Top"><i
           class="fa-sharp fa-solid fa-arrow-up"></i></a></span></div>
 
   <!-- header navbar start -->
-
+<div class="heeder" id="top">
   <header class="header1">
     <!-- logo start -->
-    <a href="#" class="logo1">MiTtO</a>
+    <a href="#" class="logo1 overflow-hidden shadow rounded-pill" style="padding: inherit;">MiTtO</a>
     <!-- Logo end -->
     <nav class="navbar">
-      <ul class="disflex">
+      <ul class="disflex sortable" id="">
 
         <!-- mens section start -->
         <li><a href="#" id="fw">Mens<sup class="badge1 text-danger">New</sup></a>
@@ -92,7 +92,7 @@
                 <ul>
                   <li><a href="#" onclick="shirt()">Shirts</a></li>
                   <li><a href="#" onclick="sweters()">Sweters</a></li>
-                  <li><a href="#">Suits</a></li>
+                  <li><a href="#" onclick="caushirt()">Causal shirts</a></li>
                   <li><a href="#">Rain Jackets</a></li>
                 </ul>
               </div>
@@ -359,7 +359,7 @@
   <li id="alll"><a href="#">--all--</a></li>
   <li onclick="shirt()"><a href="#">shirts</a></li>
   <li onclick="sweters()"><a href="#">sweters</a></li>
-  <li><a href="#">suits</a></li>
+  <li onclick="caushirt()"><a href="#">Causal shirt</a></li>
   <li><a href="#">rain jackets</a></li>
   <li><a href="#">Jeans</a></li>
   <li><a href="#">shorts</a></li>
@@ -522,23 +522,13 @@
    
     <!-- navbar Icon Section end -->
   </header>
+  </div>
   <!-- header navbar end -->
 
 
   <!-- carousel ad start -->
-  <div class="container-fluid" id="carousel">
-
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true"
-          aria-label="slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-current="true"
-          aria-label="slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="active"
-          aria-current="true" aria-label="slide 3"></button>
-
-      </div>
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+  <div class="container-fluid carousel-ad" id="carousel">
+      <div id="carouselExampleCaptions" class="carousel-fade slide carousel" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -550,17 +540,26 @@
         <div class="carousel-inner">
           <div class="carousel-item active" id="carousel-item">
             <img src="Images/online.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption1 carousel-caption d-md-block" >
+              <h5>Welcome ....</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
+                                            <p><a href="#" class="btn btn-warning text-white mt-3">Learn More</a></p>
             </div>
           </div>
           <div class="carousel-item" id="carousel-item">
-            <img src="Images/tshirt2.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            <img src="Images/shopnow2.jpg!w700wp" class="d-block w-100" alt="...">
+            <div class="carousel-caption1 carousel-caption d-md-block">
+              <h5>Best Seller ....</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
+                                            <p><a href="#" class="btn btn-success mt-3">Learn More</a></p>
             </div>
           </div>
           <div class="carousel-item" id="carousel-item">
             <img src="Images/tshirt1.jpeg.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption1 carousel-caption d-md-block">
+              <h5>Today's Special</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
+                                            <p><a href="#" class="btn btn-danger mt-3">Learn More</a></p>
             </div>
           </div>
         </div>
@@ -575,66 +574,97 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
   </div>
   <!-- carousel ad end -->
-<div class="comson">
-  <div class="container mt-4 commingsoon" id="tshirt">
-    <h1 class="text-center fw-bold" style="text-shadow: 0px 0px 5px hsl(0, 0%, 50%);">--COMMING SOON--</h1>
+<div class="topcate">
 
-    <div class="tshirts">
-      <div class="row" id="menssection">
-        <div class="row justify-content-center align-content-center" id="imageparentclass">
-          <div class="col d-flex justify-content-center align-content-center" id="img1"
-            style="overflow: hidden;flex-direction: column;">
-            <div class="carousel-item active" id="carousel-item2">
-              <img src="Images/iphone.webp" class="d-block w-100" alt="..." style="filter: blur(2px);">
-              <div class="carousel-caption d-md-block carousel-shake" style="top: 30%;">
-                <p style="font-size: 30px;font-weight: bold;color: white;text-shadow: 0px 0px 5px black;border-radius: 20%;"
-                  class="text-center bg-secondary">COMMING SOON</p>
-                <h5 style="color: white;text-shadow: 0px 0px 5px black;">2 Hours left</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center align-content-center" id="img1"
-            style="overflow: hidden;flex-direction: column;">
-            <div class="carousel-item active" id="carousel-item2">
-              <img src="Images/codress.webp" class="d-block w-100" alt="..." style="filter: blur(2px);">
-              <div class="carousel-caption d-md-block carousel-shake" style="top: 30%;">
-                <p style="font-size: 30px;font-weight: bold;color: white;text-shadow: 0px 0px 5px black;border-radius: 20%;"
-                  class="text-center bg-secondary">COMMING SOON</p>
-                <h5 style="color: white;text-shadow: 0px 0px 5px black;">18 Hours left</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center align-content-center" id="img1"
-            style="overflow: hidden;flex-direction: column;">
-            <div class="carousel-item active" id="carousel-item2">
-              <img src="Images/coshirt.webp" class="d-block w-100" alt="..." style="filter: blur(2px);">
-              <div class="carousel-caption d-md-block carousel-shake" style="top: 30%;">
-                <p style="font-size: 30px;font-weight: bold;color: white;text-shadow: 0px 0px 5px black;border-radius: 20%;"
-                  class="text-center bg-secondary">COMMING SOON</p>
-                <h5 style="color: white;text-shadow: 0px 0px 5px black;">1 days left</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center align-content-center" id="img1"
-            style="overflow: hidden;flex-direction: column;">
-            <div class="carousel-item active" id="carousel-item2">
-              <img src="Images/coheels.webp" class="d-block w-100" alt="..." style="filter: blur(2px);">
-              <div class="carousel-caption d-md-block carousel-shake" style="top: 30%;">
-                <p style="font-size: 30px;font-weight: bold;color: white;text-shadow: 0px 0px 5px black;border-radius: 20%;"
-                  class="text-center bg-secondary">COMMING SOON</p>
-                <h5 style="color: white;text-shadow: 0px 0px 5px black;">2 days left</h5>
-              </div>
-            </div>
-          </div>
-        </div>
+    <h1 class="text-center fw-bold" style="text-shadow: 0px 0px 5px hsl(0, 0%, 50%);">--TOP DEALS--</h1>
+
+    <div class="shop-section">
+      <div class="box1 box">
+       <div class="box-content">
+       <div class="box-img" style="background-image:url('Images/iphone.webp');"></div>
+       <p class="text-secondary">*Starts from only 7000</p>   
+       </div>
       </div>
-    </div>
-  </div>
-  </div>
+      <div class="box1 box">
+        <div class="box-content">
+        <div class="box-img" style="background-image:url('Images/coheels.webp');"></div>
+        <p class="text-secondary">*Best Product</p>   
+        </div>
+       </div>
+       <div class="box1 box">
+        <div class="box-content">
+        <div class="box-img" style="background-image:url('Images/codress.webp');"></div>
+        <p class="text-secondary">*Amazing Lehangas</p>   
+        </div>
+       </div>
+       <div class="box1 box">
+        <div class="box-content">
+        <div class="box-img" style="background-image:url('Images/coshirt.webp');"></div>
+        <p class="text-secondary">*Only 99</p>   
+        </div>
+       </div>
+        </div>
 <!-- carosel ad End -->
+
+<!-- Ads starts -->
+<h1 class="text-center fw-bold text-danger" style="text-shadow: 0px 0px 5px hsl(0, 0%, 50%);">--CATEGORY SPECIALS--</h1>
+
+<div class="shop-section mb-5" data-aos="zoom-in-up">
+  <div class="box1 box">
+   <div class="box-content">
+      <h2>Clothes</h2>
+   <div class="box-img" style="background-image:url('Images/box1_image.jpg');"></div>
+   <p>See more</p>   
+   </div>
+  </div>
+  <div class="box2 box"><div class="box-content">
+      <h2>Personal care</h2>
+   <div class="box-img" style="background-image:url('Images/box2_image.jpg');"></div>
+   <p>See more</p>   
+   </div></div>
+  <div class="box3 box"><div class="box-content">
+      <h2>Furniture</h2>
+   <div class="box-img" style="background-image:url('Images/box3_image.jpg');"></div>
+   <p>See more</p>   
+   </div></div>
+  <div class="box4 box"><div class="box-content">
+      <h2>Electronics</h2>
+   <div class="box-img" style="background-image:url('Images/box4_image.jpg');"></div>
+   <p>See more</p>   
+   </div>
+  </div>
+  <div class="box5 box"><div class="box-content">
+      <h2>Beuty pics</h2>
+   <div class="box-img" style="background-image:url('Images/box5_image.jpg');"></div>
+   <p>See more</p>   
+   </div>
+  </div>
+  <div class="box6 box"><div class="box-content">
+      <h2>Animals</h2>
+   <div class="box-img" style="background-image:url('Images/box6_image.jpg');"></div>
+   <p>See more</p>   
+   </div>
+  </div>
+  <div class="box7 box"><div class="box-content">
+      <h2>new Arrivel</h2>
+   <div class="box-img" style="background-image:url('Images/box7_image.jpg');"></div>
+   <p>See more</p>   
+   </div>
+  </div>
+  <div class="box8 box"><div class="box-content">
+      <h2>Fashion show</h2>
+   <div class="box-img" style="background-image:url('Images/box8_image.jpg');"></div>
+   <p>See more</p>   
+   </div>
+  </div>
+</div>
+ </div>
+
+
+
+
 
 
   <!--T-Shirts-->
@@ -662,17 +692,7 @@
               </ul>
             </div>
             <div class="row" id="MensCheckered">
-              <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators" id="carousel-indicators">
-                  <li data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" aria-current="true"
-                    aria-label="slide 1"></li>
-                  <li data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-current="true"
-                    aria-label="slide 2"></li>
-                  <li data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2" class="active" aria-current="true"
-                    aria-label="slide 3"></li>
-
-                </ol>
-                <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="false">
+                <div id="carouselExampleCaptions1" class="carousel slide carousel-fade" data-bs-ride="carousel">
                   <ol class="carousel-indicators" id="carousel-indicators">
                     <li data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active"
                       aria-current="true" aria-label="Slide 1"></li>
@@ -699,7 +719,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+             
             </div>
               <div class="row" id="MensCheckeredinfo">
                 <div class="all1">
@@ -741,16 +761,7 @@
               </ul>
             </div>
             <div class="row" id="MensCheckered">
-              <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators" id="carousel-indicators">
-                  <li data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="slide 1"></li>
-                  <li data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-current="true"
-                    aria-label="slide 2"></li>
-                  <li data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-current="true"
-                    aria-label="slide 3"></li>
-                </ol>
-                <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="false">
+                <div id="carouselExampleCaptions2" class="carousel slide carousel-fade" data-bs-ride="carousel">
                   <ol class="carousel-indicators" id="carousel-indicators">
                     <li data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active"
                       aria-current="true" aria-label="Slide 1"></li>
@@ -775,7 +786,6 @@
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -817,16 +827,7 @@
               </ul>
             </div>
             <div class="row" id="MensCheckered">
-              <div id="carouselExampleCaptions3" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators" id="carousel-indicators">
-                  <li data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="slide 1"></li>
-                  <li data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="1" aria-current="true"
-                    aria-label="slide 2"></li>
-                  <li data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="2" aria-current="true"
-                    aria-label="slide 3"></li>
-                </ol>
-                <div id="carouselExampleCaptions3" class="carousel slide" data-bs-ride="false">
+                <div id="carouselExampleCaptions3" class="carousel slide carousel-fade" data-bs-ride="carousel">
                   <ol class="carousel-indicators" id="carousel-indicators">
                     <li data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="0" class="active"
                       aria-current="true" aria-label="Slide 1"></li>
@@ -852,7 +853,6 @@
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -893,16 +893,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions4" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions4" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions4" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -929,7 +920,6 @@
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
               </div>
               <div class="row" id="MensCheckeredinfo">
@@ -969,17 +959,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions5" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions5" data-bs-slide-to="0" aria-current="true"
-                      aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions5" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions5" data-bs-slide-to="2" class="active"
-                      aria-current="true" aria-label="slide 3"></li>
-
-                  </ol>
-                  <div id="carouselExampleCaptions5" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions5" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions5" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -1006,7 +986,6 @@
                       </div>
                     </div>
                   </div>
-                </div>
               </div>
               <div class="row" id="MensCheckeredinfo">
                 <h3 class="brand">3BROS</h3>
@@ -1046,16 +1025,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions6" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions6" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions6" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions6" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions6" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions6" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions6" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -1080,7 +1050,6 @@
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -1122,16 +1091,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions7" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions7" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions7" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions7" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions7" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions7" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions7" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -1157,7 +1117,6 @@
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -1199,16 +1158,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions8" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions8" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions8" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions8" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions8" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions8" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions8" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -1234,7 +1184,6 @@
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -1289,17 +1238,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions9" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions9" data-bs-slide-to="0" aria-current="true"
-                      aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions9" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions9" data-bs-slide-to="2" class="active"
-                      aria-current="true" aria-label="slide 3"></li>
-
-                  </ol>
-                  <div id="carouselExampleCaptions9" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions9" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions9" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -1325,7 +1264,6 @@
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
               </div>
               <div class="row" id="MensCheckeredinfo">
@@ -1366,16 +1304,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions10" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions10" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions10" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions10" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions10" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions10" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions10" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -1400,7 +1329,6 @@
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -1443,16 +1371,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions11" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions11" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions11" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions11" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions11" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions11" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions11" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -1478,7 +1397,6 @@
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -1520,16 +1438,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions12" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions12" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions12" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions12" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions12" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions12" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions12" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -1555,7 +1464,6 @@
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -1596,17 +1504,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions13" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions13" data-bs-slide-to="0" aria-current="true"
-                      aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions13" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions13" data-bs-slide-to="2" class="active"
-                      aria-current="true" aria-label="slide 3"></li>
-
-                  </ol>
-                  <div id="carouselExampleCaptions13" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions13" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions13" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -1630,7 +1528,6 @@
                           <div class="carousel-caption d-none d-md-block">
                           </div>
                         </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -1673,16 +1570,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions14" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions14" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions14" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions14" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions6" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions6" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions14" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -1706,7 +1594,6 @@
                           <div class="carousel-caption d-none d-md-block">
                           </div>
                         </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -1749,16 +1636,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions15" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions15" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions15" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions15" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions15" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions15" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions15" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -1784,7 +1662,6 @@
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -1827,16 +1704,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions16" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions16" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions16" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions16" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions8" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions8" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions16" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -1862,7 +1730,6 @@
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -1919,17 +1786,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions9" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions9" data-bs-slide-to="0" aria-current="true"
-                      aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions9" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions9" data-bs-slide-to="2" class="active"
-                      aria-current="true" aria-label="slide 3"></li>
-
-                  </ol>
-                  <div id="carouselExampleCaptions9" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions9" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions9" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -1955,7 +1812,6 @@
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
               </div>
               <div class="row" id="MensCheckeredinfo">
@@ -1997,16 +1853,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions10" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions10" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions10" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions10" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions10" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions10" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions10" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -2030,7 +1877,6 @@
                           <div class="carousel-caption d-none d-md-block">
                           </div>
                         </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -2072,16 +1918,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions11" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions11" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions11" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions11" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions11" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions11" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions11" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -2108,7 +1945,6 @@
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
               </div>
               <div class="row" id="MensCheckeredinfo">
@@ -2150,16 +1986,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions12" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions12" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions12" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions12" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions12" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions12" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions12" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -2185,7 +2012,6 @@
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -2226,17 +2052,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions13" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions13" data-bs-slide-to="0" aria-current="true"
-                      aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions13" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions13" data-bs-slide-to="2" class="active"
-                      aria-current="true" aria-label="slide 3"></li>
-
-                  </ol>
-                  <div id="carouselExampleCaptions13" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions13" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions13" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -2261,7 +2077,6 @@
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -2304,16 +2119,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions14" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions14" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions14" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions14" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions6" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions6" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions14" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -2339,7 +2145,6 @@
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
               </div>
               <div class="row" id="MensCheckeredinfo">
@@ -2382,16 +2187,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions15" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions15" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions15" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions15" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions15" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions15" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions15" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -2418,7 +2214,6 @@
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
               </div>
               <div class="row" id="MensCheckeredinfo">
@@ -2457,16 +2252,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions16" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions16" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions16" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions16" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions8" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions8" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions16" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -2492,7 +2278,6 @@
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -2525,7 +2310,7 @@
 
 
     <!--causal shirts-->
-    <div class="causalshirts">
+    <div class="rain-jackets">
       <div class="row" id="menssection">
         <div class="row justify-content-center" id="imageparentclass">
 
@@ -2549,17 +2334,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions9" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions9" data-bs-slide-to="0" aria-current="true"
-                      aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions9" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions9" data-bs-slide-to="2" class="active"
-                      aria-current="true" aria-label="slide 3"></li>
-
-                  </ol>
-                  <div id="carouselExampleCaptions9" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions9" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions9" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -2582,7 +2357,6 @@
                           <img alt="" src="Images/caushirt3.webp" class="d-block w-100">
                           <div class="carousel-caption d-none d-md-block">
                           </div>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -2626,16 +2400,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions10" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions10" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions10" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions10" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions10" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions10" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions10" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -2660,7 +2425,6 @@
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -2702,16 +2466,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions11" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions11" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions11" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions11" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions11" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions11" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions11" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -2737,7 +2492,6 @@
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -2780,16 +2534,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions12" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions12" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions12" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions12" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions12" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions12" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions12" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -2815,7 +2560,6 @@
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -2855,17 +2599,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions13" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions13" data-bs-slide-to="0" aria-current="true"
-                      aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions13" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions13" data-bs-slide-to="2" class="active"
-                      aria-current="true" aria-label="slide 3"></li>
-
-                  </ol>
-                  <div id="carouselExampleCaptions13" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions13" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions13" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -2889,7 +2623,6 @@
                           <div class="carousel-caption d-none d-md-block">
                           </div>
                         </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -2932,16 +2665,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions14" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions14" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions14" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions14" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions6" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions6" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions14" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -2966,7 +2690,6 @@
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -3006,16 +2729,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions15" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions15" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions15" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions15" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions15" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions15" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions15" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -3042,7 +2756,6 @@
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
               </div>
               <div class="row" id="MensCheckeredinfo">
@@ -3082,16 +2795,7 @@
                 </ul>
               </div>
               <div class="row" id="MensCheckered">
-                <div id="carouselExampleCaptions16" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators" id="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions16" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="slide 1"></li>
-                    <li data-bs-target="#carouselExampleCaptions16" data-bs-slide-to="1" aria-current="true"
-                      aria-label="slide 2"></li>
-                    <li data-bs-target="#carouselExampleCaptions16" data-bs-slide-to="2" aria-current="true"
-                      aria-label="slide 3"></li>
-                  </ol>
-                  <div id="carouselExampleCaptions8" class="carousel slide" data-bs-ride="false">
+                  <div id="carouselExampleCaptions8" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <ol class="carousel-indicators" id="carousel-indicators">
                       <li data-bs-target="#carouselExampleCaptions16" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></li>
@@ -3117,7 +2821,6 @@
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -3165,7 +2868,7 @@
           <div class="row" data-bs-toggle="modal" data-bs-target="#myModal">Categerious</div>
           <!--  -->
           <div class="modal" id="myModal">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
               <div class="modal-content">
 
                 <!-- Modal Header -->
@@ -3176,13 +2879,13 @@
 
                 <!-- Modal body -->
                 <div class="modal-body text-dark fw-bold">
-                  <ul class="d-flex">
-                    <li>Mens</li>
-                    <li>womens</li>
-                    <li>Kids</li>
-                    <li>beauty</li>
-                    <li>home</li>
-                  </ul>
+                  <div class="row">
+                    <div class="col">Mens</div>
+                    <div class="col">womens</div>
+                    <div class="col">Kids</div>
+                    <div class="col">beauty</div>
+                    <div class="col">home</div>
+                  </div>
                 </div>
 
                 <!-- Modal footer -->
@@ -3257,4 +2960,64 @@
 
 </script>
 
+
+<div class="offer" style="position:absolute;top: 790px;cursor: pointer;">
+  <p style="font-size: 30px;color: white;transform: rotate(-90deg);margin-left: -140px;background:linear-gradient(to left,yellow,deeppink); padding: 5px 20px;">Gretest offer for you   <i class="fa-solid fa-caret-down fa-beat fa-lg"></i></p>
+</div>
+<div id="dialog" class="p-4" style="background:linear-gradient(to left,lightpink,lightyellow);">
+<div class="row d-flex justify-content-center align-items-center">
+  <div class="off">
+<h5>Avail Flat</h5>
+<h1 style="font-weight: 800;">400 OFF</h1>
+  </div>
+</div>
+<div class="row d-flex justify-content-center align-items-center">
+  <div class="coupon-code d-flex">
+  <b style="color: lightseagreen;">Coupon code:<i class="fa-solid fa-colon fa-beat-fade" style="color: darkgreen;">MiTTo8645</i></b>
+  <i>Aplicable on your first order</i>
+  </div>
+  <div class="coupon-btn pt-2">
+    <button type="button" class="btn btn-danger text-white">SIGN UP NOW</button> 
+  </div>
+</div>
+<div class="row d-flex justify-content-center align-items-center pt-4">
+<b>--Genuine Products</b><b>--Try&Buy</b><b>--Easy Exchange</b>
+</div>
+</div>
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     
+     </script>
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+  $(document).ready(function(){
+    $(".offer").click(function(){
+      $("#dialog").dialog("open");
+    })
+    $("#dialog").dialog({
+      title:"RS 400 Off Only for You",
+      draggable:true,
+      resizable:false,
+      closeOnEscape:true,
+      modal:true,
+      height:400,
+      width:400,
+      autoOpen:false,
+      show:{effect:"fold",duration:2000},
+      hide:{effect:"explode",duration:2000},
+
+    })
+    $( function() {
+    $(".sortable" ).sortable();
+  });
+  });
+
+
+  
+</script>
 </html>

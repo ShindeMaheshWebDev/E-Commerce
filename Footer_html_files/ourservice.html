@@ -57,7 +57,7 @@
 
   <!-- header navbar start -->
 
-  <header class="header1">
+  <header class="header1" style="width: 100%;">
     <!-- logo start -->
     <a href="../index.html" class="logo1">MiTtO</a>
     <!-- Logo end -->
@@ -173,21 +173,21 @@
     <h2 class="text-center">Our Services</h2>
     <div class="line mb-5"></div>
     <div class="d-flex1 mt-5">
-    <div class="single-service">
+    <div class="single-service" data-aos="slide-right" data-aos-offset="100" data-aos-delay="300">
         <div class="social"><i class="fa-solid fa-file-image"></i></div>
         <span></span>
         <h3>Service one</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ea, voluptatibus aliquam deserunt quidem ratione ipsum earum vel, omnis facere hic fuga laboriosam suscipit? Accusamus architecto nulla nam recusandae quis.
         Beatae sapiente vitae, illum autem quasi molestiae. Id fugit tempore culpa voluptas laudantium, perferendis, suscipit quae nostrum dolorum enim, blanditiis porro? Distinctio totam eos veritatis quos consequuntur nesciunt tenetur pariatur?</p>
     </div>
-    <div class="single-service">
+    <div class="single-service" data-aos="slide-up" data-aos-offset="100" data-aos-delay="300">
         <div class="social"><i class="fa fa-laptop"></i></div>
         <span></span>
         <h3>Service Two</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ea, voluptatibus aliquam deserunt quidem ratione ipsum earum vel, omnis facere hic fuga laboriosam suscipit? Accusamus architecto nulla nam recusandae quis.
         Beatae sapiente vitae, illum autem quasi molestiae. Id fugit tempore culpa voluptas laudantium, perferendis, suscipit quae nostrum dolorum enim, blanditiis porro? Distinctio totam eos veritatis quos consequuntur nesciunt tenetur pariatur?</p>
     </div>
-    <div class="single-service">
+    <div class="single-service" data-aos="slide-left" data-aos-offset="100" data-aos-delay="300">
         <div class="social"><i class="fa fa-pie-chart"></i></div>
         <span></span>
         <h3>Service Three</h3>
@@ -301,5 +301,11 @@ function Payments() {
 }
 
 </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     
+     </script>
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </body>
 </html>

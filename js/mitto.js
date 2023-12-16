@@ -138,6 +138,7 @@ function shirt(){
       $("div[id='carousel']").hide(); 
       $("div[class='sweters']").hide();
       $("div[class='comson']").hide();
+      $("div[class='topcate']").hide();
         }else{
             $("div[class='tshirts']").hide();
         }
@@ -151,10 +152,35 @@ function shirt(){
             $("div[class='causalshirts']").show();
             $("div[id='carousel']").show(); 
             $("div[class='sweters']").show();
+            $("div[class='topcate']").show();
             $("div[class='comson']").show();
           });
         });
         // for show to all content -end
+
+
+
+        $(document).ready(function(){  
+            $("div[class='causalshirts']").hide();
+        //   $("div[class='tshirts']").hide(); 
+          $("div[class='rain-jackets']").hide();
+        //   $("div[class='sweters']").hide();
+        })
+
+
+
+
+        function caushirt(){  
+            $(document).ready(function(){  
+                    $("div[class='causalshirts']").show();
+                    $("div[class='sweters']").hide(); 
+          $("div[class='rain-jackets']").hide();
+          $("div[id='carousel']").hide();
+          $("div[class='tshirts']").hide(); 
+          $("div[class='comson']").hide();
+          $("div[class='topcate']").hide();
+            })
+        }
 
 
 
@@ -168,6 +194,8 @@ function shirt(){
           $("div[id='carousel']").hide();
           $("div[class='tshirts']").hide(); 
           $("div[class='comson']").hide();
+          $("div[class='topcate']").hide();
+          
             }else{
                 $("div[class='sweters']").hide();
             }
