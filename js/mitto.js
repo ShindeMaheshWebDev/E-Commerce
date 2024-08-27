@@ -24,18 +24,20 @@
 $(document).ready(function(){
     $("#search-box").on("keyup",function(){
         var value=$(this).val().toLowerCase();
-        $("#list li").filter(function(){
-            $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1);
+        $("#imageparentclass .img11").filter(function(){
+            $(this).toggle($(this).find('.brand').text().toLowerCase().indexOf(value)>-1);
         });
     });
 });
 
+
+
 /*document title change on tab switch**/
 window.addEventListener('focus',function(){
-    this.document.title='Visit Here';
+    this.document.title='😊Visit Here';
 })
 window.addEventListener('blur',function(){
-    this.document.title='Come Back to Website';
+    this.document.title='😩Come Back to Website';
 })
 
 
@@ -57,7 +59,7 @@ $(document).ready(function () {
   $(document).ready(function () {
     $("#menu-btn").click(function () {
       $(".disflex").slideToggle(1500);
-      $(".disflex").css({"background-color":"red;"})
+      $(".disflex").css({"background-color":"green;"})
       $(".search-form").hide();
       $("#list").hide();
       $(".login-box").hide();
@@ -67,6 +69,9 @@ $(document).ready(function () {
 //   header end
 
 // login form start
+// if(location.reload){
+//     alert('welcome');
+// }
 
 $(document).ready(function () {
   $("#login-btn").click(function () {
@@ -119,10 +124,7 @@ $('body').on('mouseup', function () {
     $('body').css('margin-top', '0px');
     $(document).unbind("mousemove");
 });
-$('body').on('mouseleave', function () {
-    $('body').css('margin-top', '0px');
-    $(document).unbind("mousemove");
-});
+//
 
 // Onclick about us
 function Aboutus(){
@@ -215,30 +217,34 @@ function shirt(){
             
             var cart_item_count=0;
             var itemId=0;
-            $('#fa-shopping-cart').click(function(){
+            $('.cart-click').click(function(){
                 
                 itemId++;
-                var n=($(this).is("#imgeparentclass").length,itemId);
-                for(var i=0;i<n;i++){
+                // var n=($(this).is("#imgeparentclass").length,itemId);
+                // for(var i=0;i<n;i++){
 
                     cart_item_count++;
                    
-                var img_src=$(this).parents(".carousel-item1").siblings("img").attr("src");
-                // var title=$(this).parents(".all1").siblings(".all1").find(".brand").text();
+                var img_src=$(this).parents(".img11").find(".cart-img").attr("src");
+                // var title=$(this).parents("#img1").siblings(".all1").find(".brand").text();
                 // var price=$(this).parents(".all").siblings("#price").find("#price").text();
                
-                var title=$("h3[class='brand']").eq(i).text();
-                var price=$("span[id='price']").eq(i).text();
+                // var title=$("h3[class='brand']").eq(i).text();
+                // var price=$("span[id='price']").eq(i).text();
                 // var price=$("span[class='price1']").text();
                 // var price=$("span[id='price']").first().text();
-                // var price=$(this).parents("#img1").siblings("#img1").has("#price").text();
-    
-}
+                var title=$(this).parents(".img11").find(".brand").text();
+                var price=$(this).parents(".img11").find(".price").text();
+    console.log(price);
+    console.log(title);
+    console.log(img_src);
+
+// }
 
                 var cart_item=`
                 <div class="main d-flex p-3 border border-left-0 border-right-0 border-top-0">
                 <div class="col-md-3 border border-left-0 border-top-0 border-bottom-0">
-                    <img src=${img_src} class="w-100" alt="">
+                    <img src=${img_src} class="w-100" alt="" style="height:100px;width:100px;">
                     </div>
                     <div id="title" class="col-md-3 d-flex flex-wrap align-content-center">
                     <h6 style="font-size:13px;">${title}</h6>
@@ -265,4 +271,158 @@ function shirt(){
                 var res=$("#order").children().length;
                 $("#cart_item_count").text(res);
             }
-        })
+        });
+
+
+
+
+function greeting(){
+let date=new Date();
+let hours=date.getHours();
+let greeting=document.querySelector('#Greeting');
+if(hours>5 && hours<12){
+  greeting.innerText='Good Morning';
+}else if(hours>12 && hours<18){
+  greeting.innerText='Good Afternoon';
+}else{
+  greeting.innerText='Good Night';
+}
+console.log(hours);
+}
+
+
+
+
+
+
+
+
+
+
+
+const rangevalue =  
+    document.querySelector(".slider-container .price-slider"); 
+const rangeInputvalue =  
+    document.querySelectorAll(".range-input input"); 
+    // const product_price=document.querySelectorAll('.price').forEach(item=>{
+    //     let priceee=item.innerHTML
+    //     console.log([priceee]);
+    // });
+//   console.log([product_price]);
+// Set the price gap 
+let priceGap = 500; 
+  
+// Adding event listners to price input elements 
+const priceInputvalue =  
+    document.querySelectorAll(".price-input input"); 
+for (let i = 0; i < priceInputvalue.length; i++) { 
+    priceInputvalue[i].addEventListener("input", e => { 
+  
+        // Parse min and max values of the range input 
+        let minp = parseInt(priceInputvalue[0].value); 
+        let maxp = parseInt(priceInputvalue[1].value); 
+        let diff = maxp - minp 
+  
+        if (minp < 0) { 
+            alert("minimum price cannot be less than 0"); 
+            priceInputvalue[0].value = 0; 
+            minp = 0; 
+        } 
+  
+        // Validate the input values 
+        if (maxp > 10000) { 
+            alert("maximum price cannot be greater than 10000"); 
+            priceInputvalue[1].value = 10000; 
+            maxp = 10000; 
+        } 
+  
+        if (minp > maxp - priceGap) { 
+            priceInputvalue[0].value = maxp - priceGap; 
+            minp = maxp - priceGap; 
+  
+            if (minp < 0) { 
+                priceInputvalue[0].value = 0; 
+                minp = 0; 
+            } 
+        } 
+  
+        // Check if the price gap is met  
+        // and max price is within the range 
+        if (diff >= priceGap && maxp <= rangeInputvalue[1].max) { 
+            if (e.target.className === "min-input") { 
+                rangeInputvalue[0].value = minp; 
+                let value1 = rangeInputvalue[0].max; 
+                rangevalue.style.left = `${(minp / value1) * 100}%`; 
+            } 
+            else { 
+                rangeInputvalue[1].value = maxp; 
+                let value2 = rangeInputvalue[1].max; 
+                rangevalue.style.right =  
+                    `${100 - (maxp / value2) * 100}%`; 
+            } 
+        } 
+    }); 
+  
+    // Add event listeners to range input elements 
+    for (let i = 0; i < rangeInputvalue.length; i++) { 
+        rangeInputvalue[i].addEventListener("input", e => { 
+            let minVal =  
+                parseInt(rangeInputvalue[0].value); 
+            let maxVal =  
+                parseInt(rangeInputvalue[1].value); 
+  
+            let diff = maxVal - minVal 
+              
+            // Check if the price gap is exceeded 
+            if (diff < priceGap) { 
+              
+                // Check if the input is the min range input 
+                if (e.target.className === "min-range") { 
+                    rangeInputvalue[0].value = maxVal - priceGap; 
+                } 
+                else { 
+                    rangeInputvalue[1].value = minVal + priceGap; 
+                } 
+            } 
+            else { 
+              
+                // Update price inputs and range progress 
+                priceInputvalue[0].value = minVal; 
+                priceInputvalue[1].value = maxVal; 
+                rangevalue.style.left = 
+                    `${(minVal / rangeInputvalue[0].max) * 100}%`; 
+                rangevalue.style.right = 
+                    `${100 - (maxVal / rangeInputvalue[1].max) * 100}%`; 
+                } 
+                
+
+
+                
+        }); 
+    } 
+}
+
+
+
+function change() {
+    let results = Array.from(document.querySelectorAll('#imageparentclass > div'));
+    // Hide all results
+    results.forEach(function(result) {
+      result.style.display = 'none';
+    });
+    // Filter results to only those that meet ALL requirements:
+    Array.from(document.querySelectorAll('.filter input[rel]:checked'), function(input) {
+      const attrib = input.getAttribute('rel');
+      results = results.filter(function(result) {
+        return result.classList.contains(attrib);
+      });
+    });
+    // Show those filtered results:
+    results.forEach(function(result) {
+      result.style.display = 'block';
+    });
+  }
+  change();
+
+
+  
